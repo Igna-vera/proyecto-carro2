@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*NAV*/
+
+nav {
+  height: 100px;
+  width: 100%;
+
+  background-color: #142561;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+}
+nav ul li {
+  list-style: none;
+  background-color: orange;
+  margin: 20px;
+  margin-top: 40px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  margin: 10px;
+}
+
+h1 {
+  margin-bottom: 50px;
+
+  justify-content: center;
+  text-align: center;
+}
+
+section {
+  margin: auto;
+  min-height: calc(100vh - 300px);
+  background-color: rgba(209, 208, 207, 0.5);
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  justify-content: space-around;
+  background-color: #7e95e6;
+  margin-top: 20px;
+}
+.mangasImg {
+  height: 75%;
+  width: 100%;
+}
+
+.agregarACarrito {
+  background-color: #343e61;
+  margin: 5px;
+}
+
+.productos .card {
+  margin: 5px;
+}
+.tituloManga {
+  background-color: rgba(53, 56, 61, 0.3);
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.precioManga {
+  background-color: rgba(53, 56, 61, 0.3);
+}
+#carrito {
+  height: 100%;
+}
+
+/*CArrito total*/
+
+.carritoTotal {
+  display: flex;
+  justify-content: space-around;
+}
+.precio {
+  display: flex;
+}
+
+.precioTotal {
+  margin-left: 50px;
+}
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 50%;
+  background-color: #142561;
+  height: 200px;
+  width: 100%;
+}
+
+.nombreFooter {
+  flex: 1 1 50%;
+}
+
+.footer p {
+  color: aliceblue;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.footer .infoFooter {
+  flex: 1 1 50%;
+}
+
+.contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenedor img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 25px 25px 10px #444;
+}
+
+/*Carrusel*/
+
+.padreCarrusel {
+  display: flex;
+  justify-content: center;
+}
+
+.carrucel {
+  margin-left: 100px;
+  overflow: hidden;
+  width: 900px;
+  min-width: 870px;
+  height: 600px;
+  min-height: 550px;
+  max-width: 120em;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.carrucel .grande {
+  width: 200%;
+  padding: 2em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.carrucel .img {
+  overflow: hidden;
+  width: calc(100% / 2 -2em);
+  margin: 10px;
+}
+
+.carrucel .puntos {
+  width: auto;
+  background-color: rgba(201, 196, 191, 0);
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrucel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em;
+}
+.carrucel .punto .activo {
+  background-color: red;
+  color: red;
+}
